@@ -210,15 +210,10 @@
 				var figure = ed.getParam("uploadimage_figure", false);
 				var alt_text = getInputValue("alt");
 
-				var imgstr = "<img src='" + json["image"]["url"] + "'";
+				var imgstr = "<img data-mce-resize=false src='" + json["image"]["url"] + "'";
 
 				if(default_class != "")
-				imgstr += " class='" + default_class + "'";
-
-				if(json["image"]["height"])
-				imgstr += " height='" + json["image"]["height"] + "'";
-				if(json["image"]["width"])
-				imgstr += " width='"  + json["image"]["width"]  + "'";
+					imgstr += " class='" + default_class + "'";
 
 				imgstr += " alt='" + alt_text + "'/>";
 

@@ -104,7 +104,6 @@ tinymce.PluginManager.add('customimage', function(editor) {
 				}
 
 				imgElm.onload = function() {
-          dom.setStyle(imgElm, "max-width", "100%");
           dom.setAttrib(imgElm, "data-mce-resize", "false");
 					selectImage();
 				};
