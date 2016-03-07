@@ -310,6 +310,8 @@ tinymce.PluginManager.add('custommedia', function(editor, url) {
 			}
 		}
 
+		html = "<div class='videoiframe'>" + html + "</div>";
+
 		return html;
 	}
 
